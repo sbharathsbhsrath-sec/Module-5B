@@ -14,8 +14,24 @@ To write a Python program using **NumPy** that finds the indices where elements 
 
 ## 🧾 Program
 
-Add code here
+```
+import numpy as np
+
+arr = np.array([[1, 2, 3],
+                [4, 5, 6],
+                [7, 8, 9]])
+
+new_col = np.array([10, 11, 12])
+
+arr = np.delete(arr, 1, axis=1)
+arr = np.insert(arr, 1, new_col, axis=1)
+
+print("Updated Array:")
+print(arr)
+```
 
 ## Output
+<img width="1569" height="997" alt="image" src="https://github.com/user-attachments/assets/4d35f1dc-8a64-4266-ac95-0404eb996143" />
 
 ## Result
+The NumPy program successfully deletes the second column from a given 2D array and inserts a new column at the same position.
